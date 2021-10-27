@@ -13,6 +13,5 @@ routes.put('/apartamentos/create/:predio_id', ApartamentoController.store);
 routes.delete('/apartamentos/delete/:apartamento_id', ApartamentoController.delete);
 routes.get('/apartamentos', ApartamentoController.index);
 routes.get('/apartamentos/:apartamento_id', ApartamentoController.show);
-routes.get('/apartamentos/predios/:predio_id', ApartamentoController.showByPredios);
 
 module.exports = routes;

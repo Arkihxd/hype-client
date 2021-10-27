@@ -16,6 +16,7 @@ Yarn
 
 ## Instruções para executar o projeto
 ```
+Configurar as informações de autenticação do banco de dados em src/config/database.js
 yarn sequelize db:migrate
 yarn hype
 ```

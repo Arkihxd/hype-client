@@ -12,23 +12,6 @@ module.exports = {
         }
     },
 
-    async showByPredios(req, res){
-        const { predio_id } = req.params;
-
-        try{
-            const predio = await Predio.findByPk(predio_id, {
-                include: { association: 'apartamentos' }
-            });
-    
-            if(!predio){
-                return res.status(400).json({ error: 'Predio não existe' });
-            }
-            return res.json(predio);
-        }catch(err){
-            res.status(500).json(err);
-        }
-    },
-
     async show(req, res){
         const { apartamento_id } = req.params;
 
