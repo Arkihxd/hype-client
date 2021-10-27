@@ -31,6 +31,4 @@ routes.get('/predios/teste', (req, res) => {
     return res.json({response: "Teste de rota predios"});
 });
 
-
-
 module.exports = routes;
