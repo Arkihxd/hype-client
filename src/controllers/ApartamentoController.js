@@ -17,7 +17,9 @@ module.exports = {
         const { apartamento_id } = req.params;
 
         try{
-            const apartamento = await Apartamento.findByPk(apartamento_id);
+            const apartamento = await Apartamento.findByPk(apartamento_id, {
+                include: 'Predio'
+            });
 
             if(!apartamento){
                 return res.status(400).json({ error:'Apartamento não existe' });
