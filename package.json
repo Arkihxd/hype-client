@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "hype": "nodemon src/server.js"
+    "hype": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
