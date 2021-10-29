@@ -4,8 +4,9 @@ const Apartamento = require('../models/Apartamento');
 module.exports = {
     async index(req, res){
         try{
-            const apartamentos = await Apartamento.findAll();
-
+            const apartamentos = await Apartamento.findAll({
+                include: 'Predio'
+            });
             return res.json(apartamentos);
         }catch(err){
             res.status(500).json(err);
