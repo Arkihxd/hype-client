@@ -14,7 +14,6 @@ module.exports = {
         allowNull: false,
         references: { model: 'predios', key: 'id' },
         onUpdate: 'CASCADE',
-        onDelete: 'CASCADE',
       },
       codigo: {
         type: Sequelize.STRING,
