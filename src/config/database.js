@@ -1,10 +1,11 @@
 module.exports = {
     dialect: 'postgres',
-    host: 'localhost',
-    username: 'postgres',
-    password: '123456',
+    url: 'postgres://mbowfkkf:VEePC-M72aqZTyXR-elUt9ziodbUoVU5@fanny.db.elephantsql.com/mbowfkkf',
+    host: 'fanny.db.elephantsql.com',
+    username: 'mbowfkkf',
+    password:'VEePC-M72aqZTyXR-elUt9ziodbUoVU5',
     logging: false,
-    database: 'desafio-hype',
+    database: 'mbowfkkf',
     define: {
         timestamps: true,
         underscored: true,
