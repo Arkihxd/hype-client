@@ -3,7 +3,9 @@ const Predio = require('../models/Predio');
 module.exports = {
     async index(req, res){
         try{
-            const predios = await Predio.findAll();
+            const predios = await Predio.findAll({
+                include: { association: 'apartamentos' }
+            });
 
             return res.json(predios);
         }catch(err){
